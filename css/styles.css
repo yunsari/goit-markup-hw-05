@@ -1,0 +1,729 @@
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  color: black;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  transition: color -250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  display: flex;
+  padding: 20px 0 15px 200px;
+  border-bottom: 1px solid #e7e9fc;
+  flex-direction: row;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  min-width: 100vh;
+}
+
+.list-design {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  padding-left: 100px;
+  position: relative;
+}
+
+.list-design > li > a {
+  color: #2e2f42;
+  font-weight: 500;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.second-list-design {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  padding-left: 300px;
+}
+
+.second-list-design > li > a {
+  color: #434455;
+  font-weight: 400;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.second-list-design > li > a:focus,
+.second-list-design > li > a:hover,
+.list-design > li > a:focus,
+.list-design > li > a:hover {
+  color: #404bbf;
+}
+
+.nav-link {
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+  color: #2e2f42;
+  font-weight: 500;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link.active {
+  color: #4d5ae5;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  top: 41px;
+  opacity: 1;
+  border-radius: 2px;
+  left: 2px;
+  background-color: #4d5ae5;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  padding: 150px 0;
+  max-width: 1440px;
+  height: 600px;
+  opacity: 1;
+  margin: 0 auto;
+  width: 100%;
+  background-image: url(../images/peopleoffice.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #2e2f42b2;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: 0 auto 30px;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 2;
+  width: 496px;
+  top: 260px;
+  left: 472px;
+}
+
+.btn {
+  background-color: #4d5ae5;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 169px;
+  top: 428px;
+  left: 636px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: #404bbf;
+}
+
+.section {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  vertical-align: middle;
+}
+
+/* First Section */
+.first-section {
+  background-color: #fff;
+  padding: 120px 100px;
+}
+
+.first-section-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 8px;
+  letter-spacing: 2;
+}
+
+.card-bottom h3,
+.portfolio-card h3,
+.first-section-list > li > h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.card-bottom p,
+.first-section-list > li > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2;
+}
+
+/* Our Team */
+.team {
+  background-color: #f4f4fd;
+  text-align: center;
+  letter-spacing: 2;
+  line-height: 1.25;
+  padding: 120px 0;
+}
+
+.portfolio h2,
+.team h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.25;
+  letter-spacing: 2;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 5%;
+  gap: 40px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 264px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card img {
+  background: cover;
+}
+
+/* Card Bottom */
+.card-bottom {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* svg settings */
+.ellipse {
+  width: 40px;
+  height: 40px;
+  background: rgba(77, 90, 229, 1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ellipse-container {
+  display: flex;
+  margin: 10px;
+  gap: 24px;
+}
+
+.instagram-frame {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+}
+
+.instagram-circle {
+  width: 9px;
+  height: 9px;
+  position: absolute;
+}
+
+.instagram-point {
+  width: 2px;
+  height: 2px;
+  top: 16px;
+  left: 23px;
+  opacity: 1;
+  position: absolute;
+}
+
+.twitter-icon {
+  width: 16px;
+  height: 13px;
+}
+
+.facebook-icon {
+  width: 9px;
+  height: 16px;
+}
+
+.linkedinl {
+  width: 4px;
+  height: 11px;
+  top: 16px;
+  left: 12px;
+  position: absolute;
+}
+
+.linkedinn {
+  width: 11px;
+  height: 11px;
+  top: 16px;
+  left: 16px;
+  position: absolute;
+}
+
+.linkedinpoint {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 11px;
+  left: 12px;
+}
+
+/* Icon Box */
+.icon-box {
+  width: 264px;
+  height: 112px;
+  opacity: 1;
+  border-width: 1px;
+  background-color: #f4f4fd;
+  border: 1px solid rgba(142, 143, 153, 1);
+  margin-bottom: 10px;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.antenna {
+  width: 60px;
+  height: 64px;
+  left: 2.14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.antenna-point {
+  width: 7px;
+  height: 7px;
+  top: 63px;
+  left: 123px;
+  position: absolute;
+}
+
+.clock-icon {
+  width: 62px;
+  height: 64px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock-firstline {
+  width: 3px;
+  height: 5px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock-secondline {
+  width: 5px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+}
+
+.clock-secondlinetwo {
+  width: 5px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+}
+
+.computer-icon {
+  width: 65px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.firstcolumn {
+  width: 2.132216215133667px;
+  height: 3.1983120441436768px;
+  top: 60px;
+  left: 113px;
+  position: absolute;
+}
+
+.secondcolumn {
+  position: absolute;
+  width: 2.1322195529937744px;
+  height: 2.132209062576294px;
+  top: 61px;
+  left: 120px;
+}
+
+.thirdcolumn {
+  width: 2.132216215133667px;
+  height: 9.594985008239746px;
+  top: 55px;
+  left: 128px;
+  position: absolute;
+}
+
+.fourthcolumn {
+  position: absolute;
+  width: 2.1322126388549805px;
+  height: 5.330534934997559px;
+  top: 59px;
+  left: 137px;
+}
+
+.astronaut {
+  position: absolute;
+  width: 50.1336555480957px;
+  height: 55.46323013305664px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.astronaut-star {
+  position: absolute;
+  width: 14.80062484741211px;
+  height: 14.13385009765625px;
+  top: 27px;
+  left: 150px;
+}
+
+.astronaut-middle {
+  position: absolute;
+  width: 10.704166412353516px;
+  height: 10.667441368103027px;
+  top: 55px;
+  left: 122px;
+}
+
+.astronaut-head-one {
+  position: absolute;
+  width: 5.608712196350098px;
+  height: 6.369221210479736px;
+  top: 33px;
+  left: 138px;
+}
+
+.astronaut-head-square {
+  position: absolute;
+  width: 2.133408784866333px;
+  height: 2.133408784866333px;
+  top: 40px;
+  left: 141.5px;
+}
+
+.square-icon {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 40px;
+  left: 115px;
+}
+
+.square-icontwo {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 38.5px;
+  left: 116.5px;
+}
+
+.square-iconthree {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 37px;
+  left: 115px;
+}
+
+.square-iconfour {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 38.5px;
+  left: 113.5px;
+}
+
+.square-iconfive {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 72px;
+  left: 135px;
+}
+
+.square-iconsix {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 73.5px;
+  left: 133.5px;
+}
+
+.square-iconseven {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 73.5px;
+  left: 136.5px;
+}
+
+.square-iconeight {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 75px;
+  left: 135px;
+}
+
+.square-iconnine {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 75px;
+  left: 150px;
+}
+
+.square-iconten {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 76.5px;
+  left: 148.5px;
+}
+
+.square-iconeleven {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 78px;
+  left: 150px;
+}
+
+.square-icontwelve {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 76.5px;
+  left: 151.5px;
+}
+
+.square-iconthirteen {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 65px;
+  left: 158px;
+}
+
+.square-iconfourteen {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 63.5px;
+  left: 156.5px;
+}
+
+.square-iconfifteen {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 65px;
+  left: 155px;
+}
+
+.square-iconsixteen {
+  position: absolute;
+  width: 2.1334097385406494px;
+  height: 2.133410692214966px;
+  top: 66.5px;
+  left: 156.5px;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: #fff;
+  letter-spacing: 2;
+  line-height: 2;
+  padding: 120px 20px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 5%;
+}
+
+.portfolio-list li {
+  width: 360px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list li:hover {
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-card-bottom {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+}
+
+.card-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  padding: 35px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list li:hover .card-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Footer */
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+  padding-left: 156px;
+}
+
+.footer-left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2;
+  color: #f4f4fd;
+  width: 264px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container {
+  display: flex;
+  gap: 120px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social-title {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+.social-icons li a {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
