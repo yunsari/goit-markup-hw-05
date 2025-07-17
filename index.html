@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Ödev 5</title>
 
-  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/e7456f5e7e/UntitledProject/style-svg.css">
-  <script defer src="https://i.icomoon.io/public/temp/e7456f5e7e/UntitledProject/svgxuse.js"></script>  
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/bf49cfac84/UntitledProject/style-svg.css">
+  <script defer src="https://i.icomoon.io/public/temp/bf49cfac84/UntitledProject/svgxuse.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,9 +28,69 @@
           <ul class="list-design">
             <li><a href="index.html" class="nav-link active">Studio</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="#contact-modal">Contacts</a></li>
           </ul>
         </nav>
+
+        <!-- CONTACT FORM -->
+        <div id="contact-modal" class="modal">
+          <div class="modal-content">
+            <a href="#" class="close-btn" aria-label="Close modal">
+              <svg>
+                <use href="./images/icons.svg#icon-icon-close"></use>
+              </svg>
+            </a>
+            <p class="modal-text">Leave your contacts and we will call you back</p>
+            <form>
+              <div class="form-group input-icon">
+                <label for="fullname">Name</label>
+                <input type="text" id="fullname" name="fullname" required />
+                <svg class="icon">
+                  <use href="./images/icons.svg#icon-icon-user"></use>
+                </svg>
+              </div>
+
+              <div class="form-group input-icon">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required />
+                <svg class="icon">
+                  <use href="./images/icons.svg#icon-icon-tel"></use>
+                </svg>
+              </div>
+
+              <div class="form-group input-icon">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+                <svg class="icon">
+                  <use href="./images/icons.svg#icon-icon-mail"></use>
+                </svg>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Comment</label>
+                <textarea id="message" name="message" rows="4" placeholder="Text input" required></textarea>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" />
+                <span class="custom-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#4a60f0"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+
+                </span>
+                <p>
+                  I accept the terms and conditions of the
+                  <a href="#">Privacy Policy</a>
+                </p>
+              </div>
+
+              <button type="submit" class="submit-btn">Send</button>
+            </form>
+          </div>
+        </div>
+
       </div>
       <!-- Header Left Side -->
       <!-- Header Right Side -->
@@ -540,7 +601,7 @@
         <div class="footer-right">
           <p class="subscribe-title">Subscribe</p>
           <form>
-            <input type="email" placeholder="E-mail" class="footer-input" required/>
+            <input type="email" placeholder="E-mail" class="footer-input" required />
             <button class="footer-btn">
               Subscribe
               <svg class="send-icon">
@@ -552,4 +613,5 @@
       </div>
     </footer>
 </body>
+
 </html>
