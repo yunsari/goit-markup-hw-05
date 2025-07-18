@@ -41,7 +41,7 @@
               </svg>
             </a>
             <p class="modal-text">Leave your contacts and we will call you back</p>
-            <form>
+            <form name="contact-form">
               <div class="form-group input-icon">
                 <label for="fullname">Name</label>
                 <input type="text" id="fullname" name="fullname" required />
@@ -72,13 +72,11 @@
               </div>
 
               <div class="checkbox">
-                <input type="checkbox" />
+                <input type="checkbox" name="checkbox" />
                 <span class="custom-box">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#4a60f0"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12" />
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-checkmark"></use>
                   </svg>
-
                 </span>
                 <p>
                   I accept the terms and conditions of the
@@ -86,7 +84,7 @@
                 </p>
               </div>
 
-              <button type="submit" class="submit-btn">Send</button>
+              <button type="submit" class="submit-btn" name="button">Send</button>
             </form>
           </div>
         </div>
@@ -600,9 +598,9 @@
         </div>
         <div class="footer-right">
           <p class="subscribe-title">Subscribe</p>
-          <form>
-            <input type="email" placeholder="E-mail" class="footer-input" required />
-            <button class="footer-btn">
+          <form name="subscription-form">
+            <input type="email" name="email" placeholder="E-mail" class="footer-input" required />
+            <button type="submit" class="footer-btn">
               Subscribe
               <svg class="send-icon">
                 <use href="./images/icons.svg#icon-icon-send"></use>
